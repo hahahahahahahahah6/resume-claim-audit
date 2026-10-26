@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "resume-claim-audit"
+version = "0.1.0"
+description = "Offline static audit of documentation against Python continuation evidence"
+readme = "README.md"
+requires-python = ">=3.9"
+license = "MIT"
+authors = [{name = "resume-claim-audit contributors"}]
+dependencies = []
+
+[project.scripts]
+resume-claim-audit = "resume_claim_audit.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["resume_claim_audit*"]
